@@ -1,0 +1,73 @@
+.team-section__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 50px;
+}
+
+.team-section {
+  background-color: var(--ternary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 14px;
+}
+
+.team__profesion {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+.team__item {
+  width: 270px;
+  padding-bottom: 30px;
+  background-color: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 1198px) {
+    width: 354px;
+    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
+}
+
+.team__photo {
+  margin-bottom: 26px;
+
+  @media screen and (max-width: 1198px) {
+    width: 100%;
+  }
+}
