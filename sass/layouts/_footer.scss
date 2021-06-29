@@ -49,6 +49,8 @@
 
   @media screen and (max-width: 1198px) {
     width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (max-width: 480px) {
@@ -56,15 +58,11 @@
     align-items: center;
     justify-content: center;
   }
-
-  @media screen and (max-width: 1198px) and (min-width: 480px) {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
 }
 .footer--flex {
   display: flex;
   flex-wrap: wrap;
+
   @media screen and (max-width: 1198px) {
     align-items: center;
     justify-content: center;
@@ -73,7 +71,7 @@
 
 .footer--two {
   margin-left: 70px;
-  padding-top: 12px;
+
   @media screen and (max-width: 1198px) {
     text-align: center;
     margin-left: 0;

@@ -58,9 +58,18 @@
     &:not(:last-child) {
       margin-right: 0;
     }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
   @media screen and (max-width: 768px) {
     width: 450px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

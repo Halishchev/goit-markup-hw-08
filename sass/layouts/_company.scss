@@ -1,6 +1,14 @@
 .company-section {
   padding-top: 94px;
   padding-bottom: 94px;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
 }
 
 .company-section__title {
@@ -17,6 +25,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 }
 .company__link {
   display: block;
@@ -54,18 +66,20 @@
   height: 92px;
   width: 170px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-
   @media screen and (max-width: 1198px) {
     width: 226px;
-    &:not(:last-child) {
+
+    &:nth-child(-n + 3) {
       margin-right: 0;
       margin-bottom: 30px;
     }
   }
-  @media screen and (max-width: 483px) {
-    width: 140px;
+
+  @media screen and (max-width: 768px) {
+    width: 226px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
