@@ -1232,8 +1232,6 @@ textarea {
 @media screen and (max-width: 768px) {
   .company-section {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     max-width: 480px;
@@ -1262,7 +1260,7 @@ textarea {
       flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 478px) {
   .company {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1328,10 +1326,16 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .company__item {
-    width: 226px;
+    width: 210px;
   }
   .company__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .company__item {
+    width: 226px;
   }
 }
 
